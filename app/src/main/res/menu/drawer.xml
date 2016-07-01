@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="@string/menu_home"
+            />
+
+        <item
+            android:id="@+id/menu_about_ghanerao"
+            android:checked="false"
+            android:icon="@drawable/ic_star_black"
+            android:title="@string/menu_about_ghanerao" />
+
+        <item
+            android:id="@+id/menu_about_comittee"
+            android:checked="false"
+            android:icon="@drawable/ic_send_black"
+            android:title="@string/menu_about_comittee" />
+
+        <item
+            android:id="@+id/menu_past_comittee"
+            android:checked="false"
+            android:icon="@drawable/ic_drafts_black"
+            android:title="@string/menu_past_comittee" />
+
+
+        <item
+            android:id="@+id/menu_rrent_comi"
+            android:checked="false"
+            android:icon="@drawable/ic_email_black"
+            android:title="@string/menu_current_comittee" />
+        <item
+            android:id="@+id/menu_feedback"
+            android:checked="false"
+            android:icon="@drawable/ic_delete_black"
+            android:title="@string/menu_feedback" />
+
+    </group>
+</menu>
