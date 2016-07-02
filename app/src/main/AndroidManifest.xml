@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.company.sympo.mmsg">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
-        <activity android:name=".SplashActvity"
+        <activity
+            android:name=".SplashActvity"
             android:label="MMSG">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +26,13 @@
             android:label=""
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ComitteeDetail"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+
+        </activity>
     </application>
 
 </manifest>

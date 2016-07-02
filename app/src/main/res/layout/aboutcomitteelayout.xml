@@ -68,9 +68,10 @@
             android:id="@+id/scrollableview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/about_comitee"
+            android:lineSpacingMultiplier="1.2"
             android:padding="15dp"
-            />
+            android:text="@string/about_comitee"
+            android:textSize="15sp" />
     </android.support.v4.widget.NestedScrollView>
     <!--  </ScrollView>-->
 

@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //Replacing the main content with ContentFragment Which is our Inbox View;
                     case R.id.menu_home:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                     //   Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("Home");
                         home_content_fragment fragment = new home_content_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     // For rest of the options we just show a toast on click
 
                     case R.id.menu_about_ghanerao:
-                        Toast.makeText(getApplicationContext(), "About Ghanerao", Toast.LENGTH_SHORT).show();
+                     //   Toast.makeText(getApplicationContext(), "About Ghanerao", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("About Ghanerao");
                        /* about_ghanerao_content_fragment fragment1 = new about_ghanerao_content_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
                         return true;
                     case R.id.menu_about_comittee:
-                        Toast.makeText(getApplicationContext(), "About Comittee", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getApplicationContext(), "About Comittee", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("About Comittee");
                         about_comittee_fragment fragment2 = new about_comittee_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction2.commit();
                         return true;
                     case R.id.menu_past_comittee:
-                        Toast.makeText(getApplicationContext(), "Past Comittee", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Past Comittee", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("Past Comittee");
                         about_ghanerao_content_fragment fragment3 = new about_ghanerao_content_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction3.commit();
                         return true;
                     case R.id.menu_rrent_comi:
-                        Toast.makeText(getApplicationContext(), "Current Comittee", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getApplicationContext(), "Current Comittee", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("Current Comittee");
                         about_ghanerao_content_fragment fragment4 = new about_ghanerao_content_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction4.commit();
                         return true;
                     case R.id.menu_feedback:
-                        Toast.makeText(getApplicationContext(), "FeedBack", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(getApplicationContext(), "FeedBack", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("FeedBack");
                         feedback_fragment fragment5 = new feedback_fragment();
                         android.support.v4.app.FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                         return true;
 
                     default:
-                        Toast.makeText(getApplicationContext(), "Somethings Wrong", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Somethings Wrong", Toast.LENGTH_SHORT).show();
                         return true;
 
                 }

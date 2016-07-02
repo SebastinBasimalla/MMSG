@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * Created by Admin on 04-06-2015.
@@ -21,11 +22,12 @@ public class about_comittee_fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.aboutcomitteelayout,container,false);
-     /*   TextView home_fragment_sampletext= (TextView) view.findViewById(R.id.home_fragment_sampletext);
+        view = inflater.inflate(R.layout.aboutcomitteelayout, container, false);
+
+        TextView scrollableview = (TextView) view.findViewById(R.id.scrollableview);
         am = getActivity().getApplicationContext().getAssets();
-        typeface= Typeface.createFromAsset(getActivity().getAssets(), "cambria.ttc");
-        home_fragment_sampletext.setTypeface(typeface);*/
+        typeface = Typeface.createFromAsset(getActivity().getAssets(), "Roboto-Regular.ttf");
+        scrollableview.setTypeface(typeface);
 
         return view;
     }

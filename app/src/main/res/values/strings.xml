@@ -13,72 +13,96 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-    <string name="ghaneraotext"><br></br><b>Ghanerao</b> is a village in Desuri tehsil of Pali district of Rajasthan.\n
+    <string name="ghaneraotext">
+        <b>Ghanerao</b> is a village in Desuri tehsil of Pali district of Rajasthan.
         \n
-        <br></br>
-        The village is located on the Sadri-Desuri road State Highway 16.
-        Due to its proximity to Kumbhalgarh fort, Ranakpur Jain temple and Kumbhalgarh Wildlife Sanctuary,<br></br>
-        it is an important place in tourism with history.
-        There are many Hindu and Jain temples in and around Ghanerao.
-        There are about 11 Jain temples some of them are quite old, Muchhal Mahavir Temple being the most notable one.
-        In the village are also Hindu temples of Laxmi Narayanji, Murlidhar and Charbhujaji.
-        On the outskirts of the village is situated a ‘mahanth’ known as Giriji Ki Dhani.
-        The village have a many temples of Riddhi and Siddhi Gajanand,
-        a Sri Mahalaxmi ji, Sri Britwaser Mahadev Temple {Sri Bohra Shrimali Brahmins}
-        \n\n
-        <br></br>Ghanerao was a princely thikana of 37 villages founded in 1606.
-        It was a member of two states Jodhpur State as well as Udaipur State.
-        It was ruled by Rathores of Mertia clan.
-        The village has a fort which is now a heritage hotel
-        \n\n
-        <b>Notable Places</b>\n
-        ******************************************************\n
+        \n
+        The village is located on the Sadri-Desuri road State Highway 16 and 35Km from Falna railway station. Due to its proximity to
+        Kumbhalgarh fort, Ranakpur Jain temple and Kumbhalgarh Wildlife Sanctuary, it is an important place in tourism with
+        history. There are many Hindu and Jain temples in and around Ghanerao. There are about 11 Jain temples some of them are
+        quite old, Muchhal Mahavir Temple being the most notable one. In the village are also Hindu temples of Laxmi Narayanji,
+        Murlidhar and Charbhujaji. On the outskirts of the village is situated a ‘mahanth’ known as Giriji Ki Dhani.
+        The village have a many temples of Riddhi and Siddhi Gajanand, a Sri Mahalaxmi ji, Sri Britwaser Mahadev Temple
+        {Sri Bohra Shrimali Brahmins}
+        \n
+        \n
+        Ghanerao was a princely thikana of 37 villages founded in 1606. It was a member of two states Jodhpur State as well as Udaipur State. It was ruled by Rathores of Mertia clan. The village has a fort which is now a heritage hotel
+        \n
+        \n
+        <b>Notable places</b>\n
+        -------------------------------------------------------------\n
         •	Ghanerao Castle\n
-        •	Mahavira Jain temple, constructed around 1020 CE\n
+        •	Mahavira Jain temple,constructed around 1020 CE\n
         •	Ghanerao Jungle Lodge (Bagha Ka Bagh)\n
         •	Sri Shrimali Brahmins Mahalaxmi Tempal Ghanerao\n
-        •	Sri Britwaser Mahadev (Lord Shive Ji)Temple {Sri Bohra Shrimali Brahmins}\n\n</string>
+        •	Sri Britwaser Mahadev (Lord Shive Ji)Temple {Sri Bohra Shrimali Brahmins}\n
+
+</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_blank">BlankActivity</string>
     <string name="title_activity_feed_back">FeedBackActivity</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="about_ghanerao">This is the place where more than 100 years old Shree Chintamani Parasnathji’s new temple has been built and there was a huge celebration (Prathistha) and since then it’s been one of the place own for its love and affection for any festival and celebration in the village. Shree Jasrajji Singhvi of Ghanerao has played big role in setting up a meeting of Varkana Mahasabha between 99 villages named as Jhajam. This place is known for its historical 11 Magical Jain temple.
-In Ghanerao there are around 700 homes of Oswal families and 150 homes of Porval families. The 14th – 15th generation of Shree Dharansha family, inaugurator of Shree Ranakpur temple leaves in Ghanerao. Management of Soda Trith is taken care by Ghanerao Trust.
-Temples in Ghanerao:
-1.	Shree Adheswarji Jain Temple
-2.	Shree Kunthunathji Jain Temple
-3.	Shree Godhi Paraswanathji Jain Temple
-4.	Shree Jirawala Paraswanathji Jain Temple
-5.	Shree Chintamani Paraswanathji Jain Temple
-6.	Shree Munisuvarath Jain Temple
-7.	Shree Abhinandan Jain Temple
-8.	Shree Kesarriyaji Jain Temple
-9.	Shree Dharmanathji Jain Temple
-10.	Shree Chomukha Paraswanathji Jain Gyan Temple
-11.	Shree Nava Nakoda – Kirthistambh Jain Temple
-12.	Shree Adheswar dada Ghar Temple
-13.	Shree Himachalsuriji Jain Dadavadi
-Places at Ghanerao
-1.	Ghanerao – Ravala
-2.	Ridhi Sidhi Gajbadhan Temple
-3.	Historical and Legendary Heritage
-Location:
-10 KM from Sadri-Char bhuja main road
-7 KM from Desuri, 25 KM from Nadol, 20 KM from Ranakpur and 6 KM from Muchala Mahavir
-All public transportation is available, nearest railway station is Falna at 36 KM and airport is Udaipur at 110 KM.
-Facilities:
-2 Floors Dharamshala next to Chintamani Parasvanath Jain Temple having 28 rooms and 5 Big Rooms also it is having Bhojanshala. Also there is bed, pillow and blankets for 500 people. Apart from this there is another Dharamshala Kirtistambh having 15 rooms and 2 big rooms with Bhojanshala and very big hall for any program or vaykhyan.
-Trust:
-Shree Adhinath Bhagwan Pedi
-Main Bazar PO Ghanerao – 306704
-Tahsil – Desuri, District – Pali, Rajasthan
-President: Shree Kanakrajji Lodha – 09820258931
-Tel: 02934-284022
-Munimji – Shree Ratanji – 09414814453
+    <string name="about_ghanerao">
+        This is the place where more than 100 years old Shree Chintamani Parasnathji’s new temple has been built and there
+        was a huge celebration (Prathistha) and since then it’s been one of the place own for its love and affection for any
+        festival and celebration in the village. Shree Jasrajji Singhvi of Ghanerao has played big role in setting up a meeting
+        of Varkana Mahasabha between 99 villages named as Jhajam. This place is known for its historical 11 Magical Jain temple.
+        \n
+        \n
+        In Ghanerao there are around 700 homes of Oswal families and 150 homes of Porval families.
+        The 14th – 15th generation of Shree Dharansha family, inaugurator of Shree Ranakpur temple leaves in Ghanerao.
+        Management of Soda Trith is taken care by Ghanerao Trust.
+        \n
+        \n
+        <b>Temples in Ghanerao:</b>\n
+        1.	Shree Adheswarji Jain Temple\n
+        2.	Shree Kunthunathji Jain Temple\n
+        3.	Shree Godhi Paraswanathji Jain Temple\n
+        4.	Shree Jirawala Paraswanathji Jain Temple\n
+        5.	Shree Chintamani Paraswanathji Jain Temple\n
+        6.	Shree Munisuvarath Jain Temple\n
+        7.	Shree Abhinandan Jain Temple\n
+        8.	Shree Kesarriyaji Jain Temple\n
+        9.	Shree Dharmanathji Jain Temple\n
+        10.	Shree Chomukha Paraswanathji Jain Gyan Temple\n
+        11.	Shree Nava Nakoda – Kirthistambh Jain Temple\n
+        12.	Shree Adheswar dada Ghar Temple\n
+        13.	Shree Himachalsuriji Jain Dadavadi
+        \n
+        \n
+        <b>Places at Ghanerao</b>\n
+        1.	Ghanerao – Ravala\n
+        2.	Ridhi Sidhi Gajbadhan Temple\n
+        3.	Historical and Legendary Heritage
+        \n
+        \n
+        <b>Location:</b>\n
+        10 KM from Sadri-Char bhuja main road\n
+        7 KM from Desuri, 25 KM from Nadol, 20 KM from Ranakpur and 6 KM from Muchala Mahavir\n
+        \n
+        All public transportation is available, nearest railway station is Falna at 36 KM and airport is Udaipur at 110 KM.
+        \n
+        \n
+       <b>Facilities:</b>\n
+        2 Floors Dharamshala next to Chintamani Parasvanath Jain Temple having 28 rooms and 5 Big Rooms also it is having
+        Bhojanshala. Also there is bed, pillow and blankets for 500 people. Apart from this there is another Dharamshala
+        Kirtistambh having 15 rooms and 2 big rooms with Bhojanshala and very big hall for any program or vaykhyan.
+        \n
+        \n
+        <b>Trust:</b>\n
+        Shree Adhinath Bhagwan Pedi\n
+        Main Bazar PO Ghanerao – 306704\n
+        Tahsil – Desuri, District – Pali, Rajasthan\n
+        President: Shree Kanakrajji Lodha – 09820258931\n
+        Tel: 02934-284022\n
+        Munimji – Shree Ratanji – 09414814453\n
 </string>
-    <string name="about_comitee">Shree Muchala Mahavir Social Group was founded in the year of 1990 by Shree ABC comprising of total 11 members. With the support of all the committee members this trust is flourishing and getting on the new highs.</string>
+    <string name="about_comitee">
+        Shree Muchala Mahavir Social Group was founded in the year of 1990 by Shree ABC comprising of total 11 members.
+        With the support of all the committee members this trust is flourishing and getting on the new highs.
+    </string>
 
 
 </resources>

@@ -1,6 +1,7 @@
 package com.company.sympo.mmsg;
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
 
@@ -32,6 +33,8 @@ public class About_Ghanerao_frag extends Fragment {
         View v = inflater.inflate(R.layout.fragment_about__ghanerao_frag,container,false);
 
         TextView scrollableview=(TextView)v.findViewById(R.id.scrollableview);
+        Typeface typeface= Typeface.createFromAsset(getActivity().getAssets(),"Roboto-Regular.ttf");
+        scrollableview.setTypeface(typeface);
         collapsingToolbar = (CollapsingToolbarLayout) v.findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("About Ghanerao");
         return v;

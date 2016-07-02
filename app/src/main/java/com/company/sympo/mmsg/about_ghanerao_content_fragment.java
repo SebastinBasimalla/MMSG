@@ -105,9 +105,10 @@ public class about_ghanerao_content_fragment extends Fragment implements View.On
                     public void onItemClick(View view, int position) {
                         // TODO Handle item click
 
-                        Toast.makeText(getActivity(), "Poistion is " + android_version_names[position], Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(getActivity(), "Poistion is " + android_version_names[position], Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(getActivity(), MainActivity.class);
+                        Intent intent = new Intent(getActivity(), ComitteeDetail.class);
+                        intent.putExtra("TITLE", android_version_names[position]);
                         startActivity(intent);
 
 
