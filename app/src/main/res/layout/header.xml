@@ -23,12 +23,12 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/secondline"
         android:layout_alignEnd="@+id/profile_image"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="5dp"
         android:gravity="left"
         android:paddingBottom="4dp"
         android:text="SHREE MUCHALA MAHAVIR"
         android:textColor="#FFF"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="bold" />
 
 

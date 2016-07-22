@@ -27,12 +27,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ComitteeDetail"
+            android:name=".PastComitteeDetail"
             android:label=""
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme">
-
-        </activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".CurrentComitteeDetails"
+            android:label="@string/title_activity_current_comittee_details"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".New_FeedBack"></activity>
     </application>
 
 </manifest>

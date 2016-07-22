@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_rrent_comi:
                        // Toast.makeText(getApplicationContext(), "Current Comittee", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("Current Comittee");
-                        about_ghanerao_content_fragment fragment4 = new about_ghanerao_content_fragment();
+                        Current_Comitte_Frag fragment4 = new Current_Comitte_Frag();
                         android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction4.replace(R.id.frame, fragment4);
                         fragmentTransaction4.commit();
@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_feedback:
                        // Toast.makeText(getApplicationContext(), "FeedBack", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("FeedBack");
-                        feedback_fragment fragment5 = new feedback_fragment();
+                        New_FeedBack fragment5 = new New_FeedBack();
                         android.support.v4.app.FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction5.replace(R.id.frame, fragment5);
                         fragmentTransaction5.commit();

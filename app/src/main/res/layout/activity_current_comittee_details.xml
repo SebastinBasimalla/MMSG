@@ -6,17 +6,15 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:id="@+id/topView"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:orientation="horizontal"
         android:background="@color/newgreen"
-        >
 
+        android:orientation="horizontal"
+        android:id="@+id/topView_currentComittee">
 
-
-        <ImageView
-            android:id="@+id/backarrow"
+       <ImageView
+            android:id="@+id/backarrowCurrentComittee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_arrow_back_white_36dp"
@@ -26,16 +24,14 @@
 
             />
 
-
-
         <TextView
             android:id="@+id/detailtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Past Comittee"
+            android:text="Current Comittee"
             android:textColor="@android:color/white"
             android:textSize="22sp"
-           android:layout_centerInParent="true"
+            android:layout_centerInParent="true"
 
             />
 
@@ -45,13 +41,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/topView"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/topView_currentComittee">
 
         <ImageView
-            android:id="@+id/img_android_pastcomitee"
+            android:id="@+id/img_android_currentcomitee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -60,14 +56,15 @@
             android:background="@drawable/ic_action_account_circle" />
 
         <TextView
-            android:id="@+id/detailName"
+            android:id="@+id/detailNameCurrentComitte"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/img_android_pastcomitee"
+            android:layout_toRightOf="@+id/img_android_currentcomitee"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
     </RelativeLayout>
 
 

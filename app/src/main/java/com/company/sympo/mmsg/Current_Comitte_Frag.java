@@ -15,15 +15,15 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+import adapter.CurrentComitteAdapter;
 import adapter.DataAdapter;
 import adapter.OnItemClickListener;
 import adapter.RecyclerItemClickListener;
 import model.AndroidVersion;
-
 /**
- * Created by Admin on 04-06-2015.
+ * Created by Sebastin on 7/22/2016.
  */
-public class about_ghanerao_content_fragment extends Fragment implements View.OnClickListener {
+public class Current_Comitte_Frag extends Fragment implements View.OnClickListener {
 
     AssetManager am;
     Typeface typeface;
@@ -36,7 +36,7 @@ public class about_ghanerao_content_fragment extends Fragment implements View.On
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         //view = inflater.inflate(R.layout.aboutghaneraolayout,container,false);
-        view = inflater.inflate(R.layout.new_view_layout, container, false);
+        view = inflater.inflate(R.layout.current_comittee_frag_layout, container, false);
      /*   TextView home_fragment_sampletext= (TextView) view.findViewById(R.id.home_fragment_sampletext);
         am = getActivity().getApplicationContext().getAssets();
         typeface= Typeface.createFromAsset(getActivity().getAssets(), "cambria.ttc");
@@ -87,13 +87,14 @@ public class about_ghanerao_content_fragment extends Fragment implements View.On
     };
 
     private void initViews(View v) {
-        recyclerView = (RecyclerView) v.findViewById(R.id.card_recycler_view);
+        recyclerView = (RecyclerView) v.findViewById(R.id.current_comittee_farg_recyclerview);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
         androidVersions = prepareData();
-        DataAdapter adapter = new DataAdapter(getActivity(), androidVersions, listener);
+
+        CurrentComitteAdapter adapter = new CurrentComitteAdapter(getActivity(), androidVersions, listener);
         recyclerView.setAdapter(adapter);
         recyclerView.setOnClickListener(this);
         recyclerView.addOnItemTouchListener(
@@ -102,9 +103,9 @@ public class about_ghanerao_content_fragment extends Fragment implements View.On
                     public void onItemClick(View view, int position) {
                         // TODO Handle item click
 
-                      //  Toast.makeText(getActivity(), "Poistion is " + android_version_names[position], Toast.LENGTH_SHORT).show();
+                        //  Toast.makeText(getActivity(), "Poistion is " + android_version_names[position], Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(getActivity(), PastComitteeDetail.class);
+                        Intent intent = new Intent(getActivity(), CurrentComitteeDetails.class);
                         intent.putExtra("TITLE", android_version_names[position]);
                         startActivity(intent);
 
