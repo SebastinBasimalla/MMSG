@@ -35,7 +35,9 @@
             android:name=".CurrentComitteeDetails"
             android:label="@string/title_activity_current_comittee_details"
             android:theme="@style/AppTheme" />
-        <activity android:name=".New_FeedBack"></activity>
+
+        <activity android:name=".NewDetailsActivity" />
+        <activity android:name=".Current_comitte_detail"/>
     </application>
 
 </manifest>

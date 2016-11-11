@@ -6,17 +6,17 @@ package adapter;
 
 import java.util.List;
 
-import model.AndroidVersion;
+import model.PeopleInfoData;
 
 
 
 
 public class ContentAdapter {
 
-    private final List<AndroidVersion> items;
+    private final List<PeopleInfoData> items;
     private final OnItemClickListener listener;
 
-    public ContentAdapter(List<AndroidVersion> items, OnItemClickListener listener) {
+    public ContentAdapter(List<PeopleInfoData> items, OnItemClickListener listener) {
         this.items = items;
         this.listener = listener;
     }

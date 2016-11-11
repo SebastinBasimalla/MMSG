@@ -21,7 +21,8 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            app:layout_scrollFlags="scroll|enterAlways">
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"-->
 
             <ImageView
                 android:id="@+id/header"
@@ -68,7 +69,7 @@
             android:id="@+id/scrollableview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
+            android:lineSpacingMultiplier="1.4"
             android:padding="15dp"
             android:text="@string/ghaneraotext"
             android:textSize="15sp" />

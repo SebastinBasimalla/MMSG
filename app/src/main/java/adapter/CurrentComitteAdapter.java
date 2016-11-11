@@ -2,31 +2,27 @@ package adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.company.sympo.mmsg.R;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import model.AndroidVersion;
+import model.PeopleInfoData;
 
 /**
  * Created by Sebastin on 7/22/2016.
  */
 public class CurrentComitteAdapter extends RecyclerView.Adapter<CurrentComitteAdapter.ViewHolder> implements View.OnClickListener {
-    private ArrayList<AndroidVersion> android_versions;
+    private ArrayList<PeopleInfoData> android_versions;
     private Context context;
     private OnItemClickListener listener=null;
 
-    public CurrentComitteAdapter(Context context,ArrayList<AndroidVersion> android_versions,OnItemClickListener listener) {
+    public CurrentComitteAdapter(Context context, ArrayList<PeopleInfoData> android_versions, OnItemClickListener listener) {
         this.context = context;
         this.android_versions = android_versions;
         this.listener=listener;
@@ -42,9 +38,9 @@ public class CurrentComitteAdapter extends RecyclerView.Adapter<CurrentComitteAd
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
 
-        viewHolder.tv_android.setText(android_versions.get(i).getAndroid_version_name());
+        viewHolder.tv_android.setText(android_versions.get(i).getPeopleName());
         //  viewHolder.bind(android_versions.get(i), listener,i,viewHolder);
-        //  Picasso.with(context).load(android_versions.get(i).getAndroid_image_url()).resize(120, 60).into(viewHolder.img_android);
+        //  Picasso.with(context).load(android_versions.get(i).getPeopleUrl()).resize(120, 60).into(viewHolder.img_android);
 
     }
 

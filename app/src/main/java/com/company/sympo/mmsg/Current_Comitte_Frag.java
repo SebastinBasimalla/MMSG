@@ -15,22 +15,74 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import adapter.CurrentComitteAdapter;
 import adapter.DataAdapter;
 import adapter.OnItemClickListener;
 import adapter.RecyclerItemClickListener;
-import model.AndroidVersion;
+import model.PeopleInfoData;
+
 /**
  * Created by Sebastin on 7/22/2016.
  */
 public class Current_Comitte_Frag extends Fragment implements View.OnClickListener {
 
+      private final String name_people[] = {
+            "Shree Kanakrajji Lodha",
+            "Shree Sureshji Punmiya",
+            "Shree Nirmalji Hingad",
+            "Shree Rajubhai Khichiya",
+            "Shree Arvindji Kothari",
+            "Shree Prakashji Lodha",
+            "Shree Devendraji",
+            "Shree Rajendraji Khich",
+            "Shree Rajendraji Khich",
+            "Shree Rajendraji Khich"
+    };
+    private final Integer peopleImages[] = {
+            R.drawable.imageone,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle
+
+    };
+    private final Integer peopleImageLarge[] = {
+            R.drawable.imageonelarge,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle,
+            R.drawable.ic_action_account_circle
+
+    };
     AssetManager am;
     Typeface typeface;
     View view;
-    private OnItemClickListener listener;
     RecyclerView recyclerView;
     ArrayList androidVersions;
+
+/*    private final String android_version_names[] = {
+            "Donut",
+            "Eclair",
+            "Froyo",
+            "Gingerbread",
+            "Honeycomb",
+            "Ice Cream Sandwich",
+            "Jelly Bean",
+            "KitKat",
+            "Lollipop",
+            "Marshmallow"
+    };*/
+    ArrayList peopleData;
+    private OnItemClickListener listener;
 
     @Nullable
     @Override
@@ -47,54 +99,14 @@ public class Current_Comitte_Frag extends Fragment implements View.OnClickListen
         return view;
     }
 
-/*    private final String android_version_names[] = {
-            "Donut",
-            "Eclair",
-            "Froyo",
-            "Gingerbread",
-            "Honeycomb",
-            "Ice Cream Sandwich",
-            "Jelly Bean",
-            "KitKat",
-            "Lollipop",
-            "Marshmallow"
-    };*/
-
-    private final String android_version_names[] = {
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place",
-            "Shree Kanakrajji Lodha – Place"
-    };
-
-    private final String android_image_urls[] = {
-            "http://api.learn2crack.com/android/images/donut.png",
-            "http://api.learn2crack.com/android/images/eclair.png",
-            "http://api.learn2crack.com/android/images/froyo.png",
-            "http://api.learn2crack.com/android/images/ginger.png",
-            "http://api.learn2crack.com/android/images/honey.png",
-            "http://api.learn2crack.com/android/images/icecream.png",
-            "http://api.learn2crack.com/android/images/jellybean.png",
-            "http://api.learn2crack.com/android/images/kitkat.png",
-            "http://api.learn2crack.com/android/images/lollipop.png",
-            "http://api.learn2crack.com/android/images/marshmallow.png"
-    };
-
     private void initViews(View v) {
         recyclerView = (RecyclerView) v.findViewById(R.id.current_comittee_farg_recyclerview);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-        androidVersions = prepareData();
-
-        CurrentComitteAdapter adapter = new CurrentComitteAdapter(getActivity(), androidVersions, listener);
+        peopleData = prepareData();
+        DataAdapter adapter = new DataAdapter(getActivity(), peopleData, listener);
         recyclerView.setAdapter(adapter);
         recyclerView.setOnClickListener(this);
         recyclerView.addOnItemTouchListener(
@@ -103,11 +115,16 @@ public class Current_Comitte_Frag extends Fragment implements View.OnClickListen
                     public void onItemClick(View view, int position) {
                         // TODO Handle item click
 
-                        //  Toast.makeText(getActivity(), "Poistion is " + android_version_names[position], Toast.LENGTH_SHORT).show();
+                        //           Toast.makeText(getActivity(), "Poistion is " + peopleData.get(position), Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(getActivity(), CurrentComitteeDetails.class);
-                        intent.putExtra("TITLE", android_version_names[position]);
+
+                        Intent intent = new Intent(getActivity(), Current_comitte_detail.class);
+                        intent.putExtra("Name", ((PeopleInfoData) peopleData.get(position)).getPeopleName());
+                        intent.putExtra("LargeImageUrl", String.valueOf(((PeopleInfoData) peopleData.get(position)).getPeopleLargeURL()));
                         startActivity(intent);
+
+
+                        ;
 
 
                     }
@@ -119,14 +136,15 @@ public class Current_Comitte_Frag extends Fragment implements View.OnClickListen
 
     private ArrayList prepareData() {
 
-        ArrayList android_version = new ArrayList<>();
-        for (int i = 0; i < android_version_names.length; i++) {
-            AndroidVersion androidVersion = new AndroidVersion();
-            androidVersion.setAndroid_version_name(android_version_names[i]);
-            androidVersion.setAndroid_image_url(android_image_urls[i]);
-            android_version.add(androidVersion);
+        ArrayList peopleData = new ArrayList<>();
+        for (int i = 0; i < name_people.length; i++) {
+            PeopleInfoData peopleInfo = new PeopleInfoData();
+            peopleInfo.setPeopleName(name_people[i]);
+            peopleInfo.setPeopleUrl(peopleImages[i]);
+            peopleInfo.setPeopleLargeURL(peopleImageLarge[i]);
+            peopleData.add(peopleInfo);
         }
-        return android_version;
+        return peopleData;
     }
 
 
@@ -139,9 +157,8 @@ public class Current_Comitte_Frag extends Fragment implements View.OnClickListen
     @Override
     public void onClick(View v) {
         int itemPosition = recyclerView.getChildLayoutPosition(view);
-        // String item = androidVersions.get(itemPosition);
+        // String item = peopleData.get(itemPosition);
         Toast.makeText(getActivity(), "Clikc Item is " + itemPosition, Toast.LENGTH_LONG).show();
     }
-
 
 }

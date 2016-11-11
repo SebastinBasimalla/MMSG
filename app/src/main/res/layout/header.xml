@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="190dp"
-    android:background="@color/newgreen"
+    android:layout_height="170dp"
+    android:background="@android:color/white"
     android:orientation="vertical">
 
 
@@ -13,23 +13,24 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_margin="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:src="@drawable/display"
-        app:border_color="#FF000000" />
+        app:border_color="#FF000000"
+        />
 
     <TextView
         android:id="@+id/firstline"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/secondline"
-        android:layout_alignEnd="@+id/profile_image"
-        android:layout_marginLeft="5dp"
-        android:gravity="left"
         android:paddingBottom="4dp"
         android:text="SHREE MUCHALA MAHAVIR"
-        android:textColor="#FFF"
+        android:textColor="@color/newgreen"
         android:textSize="12sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/profile_image"
+        android:gravity="center"
+    />
 
 
     <TextView
@@ -37,13 +38,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/firstline"
-        android:layout_alignParentBottom="true"
+       android:layout_below="@+id/firstline"
         android:layout_alignStart="@+id/firstline"
-        android:layout_marginBottom="8dp"
-        android:gravity="left"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
         android:text="SOCIAL GROUP"
-        android:textColor="#fff"
-        android:textSize="14sp" />
+        android:textColor="@color/newgreen"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 
 
 </RelativeLayout>

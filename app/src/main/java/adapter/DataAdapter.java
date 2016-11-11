@@ -2,40 +2,37 @@ package adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.company.sympo.mmsg.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import model.AndroidVersion;
+import model.PeopleInfoData;
 
 
 /**
  * Created by Sebastin on 6/5/2016.
  */
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> implements View.OnClickListener{
-    private ArrayList<AndroidVersion> android_versions;
+    private ArrayList<PeopleInfoData> peopleInfo;
     private Context context;
     private OnItemClickListener listener=null;
 
-    public DataAdapter(Context context,ArrayList<AndroidVersion> android_versions,OnItemClickListener listener) {
+    public DataAdapter(Context context, ArrayList<PeopleInfoData> peopleInfo, OnItemClickListener listener) {
         this.context = context;
-        this.android_versions = android_versions;
+        this. peopleInfo = peopleInfo;
         this.listener=listener;
     }
 
     @Override
     public DataAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row_layout, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.pastcomitte_row_new, viewGroup, false);
         view.setOnClickListener(this);
         return new ViewHolder(view);
     }
@@ -43,15 +40,15 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
 
-        viewHolder.tv_android.setText(android_versions.get(i).getAndroid_version_name());
+        viewHolder.title.setText( peopleInfo.get(i).getPeopleName());
       //  viewHolder.bind(android_versions.get(i), listener,i,viewHolder);
-      //  Picasso.with(context).load(android_versions.get(i).getAndroid_image_url()).resize(120, 60).into(viewHolder.img_android);
+        Picasso.with(context).load(peopleInfo.get(i).getPeopleUrl()).into(viewHolder.thumbnail);
 
     }
 
     @Override
     public int getItemCount() {
-        return android_versions.size();
+        return  peopleInfo.size();
     }
 
     @Override
@@ -63,13 +60,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> im
 
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView tv_android;
-        ImageView img_android;
+        TextView title;
+        ImageView thumbnail;
         public ViewHolder(View view) {
             super(view);
 
-            tv_android = (TextView)view.findViewById(R.id.tv_android);
-            img_android = (ImageView)view.findViewById(R.id.img_android);
+            title = (TextView)view.findViewById(R.id.title);
+            thumbnail = (ImageView)view.findViewById(R.id.thumbnail);
         }
 
 

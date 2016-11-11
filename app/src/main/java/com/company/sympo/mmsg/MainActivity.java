@@ -15,7 +15,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements New_FeedBack.DataPassListener{
 
     //Defining Variables
     private Toolbar toolbar;
@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_rrent_comi:
                        // Toast.makeText(getApplicationContext(), "Current Comittee", Toast.LENGTH_SHORT).show();
                         ToolBarTextInitilizer("Current Comittee");
+                        //about_ghanerao_content_fragment fragment4 = new about_ghanerao_content_fragment();
                         Current_Comitte_Frag fragment4 = new Current_Comitte_Frag();
                         android.support.v4.app.FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction4.replace(R.id.frame, fragment4);
@@ -120,6 +121,7 @@ public class MainActivity extends AppCompatActivity {
                         New_FeedBack fragment5 = new New_FeedBack();
                         android.support.v4.app.FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
                         fragmentTransaction5.replace(R.id.frame, fragment5);
+                       // fragmentTransaction5.addToBackStack("MainActivity");
                         fragmentTransaction5.commit();
 
                         return true;
@@ -181,4 +183,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void passData(String data) {
+        ToolBarTextInitilizer(data);
+    }
 }
